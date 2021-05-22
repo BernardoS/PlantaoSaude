@@ -1,13 +1,10 @@
-import React,{useState} from 'react';
+import React from 'react';
 import logoSymbol from '../../images/Logo.png';
 import logoPhrase from '../../images/PlantaoSaude.png';
 import './style.css';
 
 const NavBar = () =>{
-    const [signed,setSigned] = useState(false);
-    const navegaAcesso=()=>{
-        !signed?setSigned(true):setSigned(false);
-    }
+    
     return(
         <div className="bar">
             <div className="logo">
@@ -16,7 +13,7 @@ const NavBar = () =>{
             </div>
             <div className="menu">
                 <button>Estatísticas da cidade</button>
-                {signed?<button onClick={()=>navegaAcesso()}>Acesso Hospital</button>:<button onClick={()=>navegaAcesso()}>Sair</button>}        
+                <button onClick={()=>{}}>Acesso Hospital</button>
             </div>
         </div>
     )

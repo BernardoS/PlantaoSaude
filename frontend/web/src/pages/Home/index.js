@@ -5,8 +5,8 @@ import React from 'react';
 import './style.css';
 import bannerImage from '../../images/Banner.png'
 import searchIcon from '../../images/icons/search-solid.svg';
-
-
+import buscaHospital from '../../images/Busca_Hospital.png';
+import buscaTriagem from '../../images/Busca_Triagem.png';
 
 const Home = () =>{
     return(
@@ -46,10 +46,28 @@ const Home = () =>{
             <div className="smartSearch">
                 <h2>Busca Inteligente</h2>
                 <div className="smartSearchOption">
-
+                    <div>
+                        <h2>Buscar melhor hospital</h2>
+                        <p>
+                        Baseado nas lotações dos hospitais, nas especialidades disponíveis o Plantão Saúde lhe fornece a opção mais segura e eficiente.
+                        </p>
+                        <button>Achar melhor hospital</button>
+                    </div>
+                    <div>
+                        <img className="optionImage" alt="Ilustração de personagem procurando" src={buscaHospital} />
+                    </div>
                 </div>
                 <div className="smartSearchOption">
-
+                    <div>
+                        <h2>Pré-Triagem</h2>
+                        <p>
+                        Responda um questionários sobre os seus sintomas e descubra qual o hospital mais adequado para atender os seus sintomas.
+                        </p>
+                        <button>Fazer pré-triagem</button>
+                    </div>
+                    <div>
+                        <img className="optionImage" alt="Ilustração de personagens usando a triagem" src={buscaTriagem} />
+                    </div>
                 </div>
             </div>
             

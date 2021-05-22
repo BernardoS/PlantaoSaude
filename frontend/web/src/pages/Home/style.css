@@ -57,6 +57,9 @@
     font-size: 25px;
     background: #F6F6F6;
 }
+.especialityField option{
+    padding:20px;
+}
 .ocupationField{
     color:#5FC38E;
     font-family: 'Roboto';
@@ -65,6 +68,9 @@
     border: 0px;
     font-size: 25px;
     background: #F6F6F6;
+}
+.ocupationField option{
+    padding:20px;
 }
 .line{
     width: 75px;
@@ -93,5 +99,57 @@
     background-color:#67D49A;
     border-radius: 6px;
     margin-bottom:25px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-
+.smartSearchOption div{
+    height: 100%;
+}
+.smartSearchOption h2{
+    margin-left: 30px;
+    color:#F6F6F6;
+    font-size: 30px;
+}
+.smartSearchOption p{
+    margin-left: 30px;
+    color: #F6F6F6;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 34px;
+    width: 80%;
+}
+.smartSearchOption button{
+    padding: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 34px;
+    background-color: #44AD75;
+    margin-top: 30px;
+    margin-left: 30px;
+    border:0px;
+    border-radius: 6px;
+    color:#F6F6F6;
+}
+.smartSearchOption button:active{
+    padding: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 34px;
+    background-color: #2d754f;
+    margin-top: 30px;
+    margin-left: 30px;
+    border:0px;
+    border-radius: 6px;
+    color:#F6F6F6;
+}
+.optionImage{
+    height: 300px;
+    margin-right: 50px;
+}
