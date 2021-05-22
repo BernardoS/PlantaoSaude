@@ -4,14 +4,14 @@ import React from 'react';
 //local imports
 import './style.css';
 import NavBar from '../../components/NavBar';
-import Home from '../Home';
 import Footer from '../../components/Footer';
+import Login from '../Login';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
-      <Home/>
+        <Login/>
       <Footer/>
     </div>
   );
