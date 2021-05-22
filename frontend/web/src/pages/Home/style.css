@@ -48,7 +48,7 @@
 .searchIcon{
     height: 25px;
 }
-.especialityField{
+.specialityField{
     color:#5FC38E;
     font-family: 'Roboto';
     font-weight: 700;
@@ -57,7 +57,7 @@
     font-size: 25px;
     background: #F6F6F6;
 }
-.especialityField option{
+.specialityField option{
     padding:20px;
 }
 .ocupationField{
