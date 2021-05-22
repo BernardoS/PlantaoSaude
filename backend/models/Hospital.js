@@ -29,7 +29,11 @@ const esquema = mongoose.Schema({
         type: String,
         required: true
     },
-    foto: String
+    foto: String,
+    verificado: {
+        type: Boolean,
+        default: false
+    }
 })
 
 const Hospital = mongoose.model('Hospital', esquema)

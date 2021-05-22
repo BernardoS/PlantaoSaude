@@ -1,5 +1,7 @@
 import Especialidade from '../models/Especialidade.js'
 
+import mongoose from 'mongoose'
+
 export const getEspecialidade = async (req, res) => {
     try {
         const especialidade = await Especialidade.find()
@@ -24,4 +26,27 @@ export const createEspecialidade = async (req, res) => {
     }
     
 
+}
+
+export const deleteEspecialidade = async (req, res) => {
+    const { id } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`Sem especialidade com este id: ${id}`);
+
+    await Especialidade.findByIdAndRemove(id);
+
+    res.json({ message: 'Especialidade deletada com sucesso' })
+
+}
+
+export const incrementarEspecialidade = async (req, res) => {
+    const { id } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) return res.status(404).send(`No post with id: ${id}`);
+    
+    const especialidade = await Especialidade.findById(id);
+
+    const updatedEspecialidade = await Especialidade.findByIdAndUpdate(id, { contar_especialidade: especialidade.contar_especialidade + 1 }, { new: true });
+    
+    res.json(updatedEspecialidade);
 }

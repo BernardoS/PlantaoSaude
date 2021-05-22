@@ -5,7 +5,7 @@ const esquema = mongoose.Schema({
         type: String,
         required: true
     },
-    quantidade: {
+    contar_especialidade: {
         type: Number,
         min: 0,
         default: 0
