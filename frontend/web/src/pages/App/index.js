@@ -5,13 +5,13 @@ import React from 'react';
 import './style.css';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
-import Login from '../Login';
+import HospitalProfile from '../HospitalProfile';
 
 function App() {
   return (
     <div className="App">
       <NavBar/>
-        <Login/>
+        <HospitalProfile/>
       <Footer/>
     </div>
   );

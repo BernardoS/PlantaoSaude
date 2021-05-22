@@ -20,7 +20,7 @@ const Home = () =>{
                     <input className="searchBar"/>
                     <img alt="Ícone de busca" className="searchIcon" src={searchIcon}/>
                     <div className="line"/>
-                    <select className="especialityField" name="especialidades" id="especialidades">
+                    <select className="specialityField" name="especialidades" id="especialidades">
                         <option value="Ortopedia">Ortopedia</option>
                         <option value="Geriatria">Geriatria</option>
                         <option value="Gastrointestinal">Gastroinstestinal</option>
