@@ -1,0 +1,97 @@
+.backgroundLayer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 520px;
+}
+.headline{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 84px;
+    display: flex;
+    color: #248752;
+    width: 600px;
+    position:absolute;
+    left: 20%;
+    top: 206px;
+}
+.banner{
+    width: 974px;
+    height: 548px;
+    margin-left: 30%;
+    margin-top: 0%;
+}
+.form{
+    margin: auto;
+    margin-top: -50px;
+    width: 1200px;
+    height: 120px;
+    background: #F6F6F6;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.searchBar{
+    color:#5FC38E;
+    font-family: 'Roboto';
+    font-weight: 700;
+    height: 95%;
+    border: 0px;
+    font-size: 25px;
+    width: 50%;
+    background: #F6F6F6;
+}
+.searchIcon{
+    height: 25px;
+}
+.especialityField{
+    color:#5FC38E;
+    font-family: 'Roboto';
+    font-weight: 700;
+    height: 95%;
+    border: 0px;
+    font-size: 25px;
+    background: #F6F6F6;
+}
+.ocupationField{
+    color:#5FC38E;
+    font-family: 'Roboto';
+    font-weight: 700;
+    height: 95%;
+    border: 0px;
+    font-size: 25px;
+    background: #F6F6F6;
+}
+.line{
+    width: 75px;
+    height: 0px;
+    left: 1063.35px;
+    top: 596px;
+    background-color: #5FC38E;
+    border: 1px solid #67D89C;
+    transform: rotate(90deg); 
+}
+.smartSearch{
+    width: 60%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+.smartSearch h2{
+    font-size: 35px;
+    color:#20794A;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+.smartSearchOption{
+    margin-top: 26px;
+    height: 342px;
+    background-color:#67D49A;
+    border-radius: 6px;
+    margin-bottom:25px ;
+}
+
