@@ -1,0 +1,43 @@
+.bar{
+    background-color: #FFFFFF;
+    color: #20794A;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+.logoSymbol{
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+}
+.logoPhrase{
+    width: 181px;
+    height: 181px;
+    margin-top: -30px;
+    margin-left: -15px;
+}
+.menu{
+    padding-right: 132px;
+    padding-top: 30px;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+}
+
+.menu button{
+    margin-left: 60px;
+    font-size:20px;
+    color:#20794A;
+    background-color: #FFFFFF;
+    border:0px;
+}
