@@ -5,15 +5,17 @@ import React from 'react';
 import './style.css';
 import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
-import HospitalProfile from '../HospitalProfile';
+import Routes from '../../routes/index';
+import {BrowserRouter as Router} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
+    <Router>
       <NavBar/>
-        <HospitalProfile/>
+        <Routes />
       <Footer/>
-    </div>
+    </Router>
   );
 }
 

@@ -1,19 +1,18 @@
 //library imports
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router} from 'react-router-dom';
+import AuthContext from './contexts/auth';
 
 //local imports
 import './index.css';
 import App from './pages/App';
 
 
-
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <AuthContext.Provider value={{signed:true}}>
       <App />
-    </Router>
+    </AuthContext.Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

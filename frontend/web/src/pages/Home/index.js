@@ -8,7 +8,8 @@ import searchIcon from '../../images/icons/search-solid.svg';
 import buscaHospital from '../../images/Busca_Hospital.png';
 import buscaTriagem from '../../images/Busca_Triagem.png';
 
-const Home = () =>{
+export default function Home(){
+
     return(
         <div className="container">
             <div className="backgroundLayer">
@@ -19,7 +20,7 @@ const Home = () =>{
                 <form className="form">
                     <input className="searchBar"/>
                     <img alt="Ícone de busca" className="searchIcon" src={searchIcon}/>
-                    <div className="line"/>
+                    <div className="lineSearch"/>
                     <select className="specialityField" name="especialidades" id="especialidades">
                         <option value="Ortopedia">Ortopedia</option>
                         <option value="Geriatria">Geriatria</option>
@@ -27,7 +28,7 @@ const Home = () =>{
                         <option value="Neurologia">Neurologia</option>
                         <option selected value="Especialidades">Especialidades</option>
                     </select>
-                    <div className="line"/>
+                    <div className="lineSearch"/>
                     <select className="ocupationField" name="ocupação" id="ocupação">
                         <option selected value="100%">Menor que 100%</option>
                         <option  value="90%">Menor que 90%</option>
@@ -75,5 +76,5 @@ const Home = () =>{
     )
 }
 
-export default Home;
+
 

@@ -72,14 +72,13 @@
 .ocupationField option{
     padding:20px;
 }
-.line{
-    width: 75px;
-    height: 0px;
+.lineSearch{
+    width: 0px;
+    height: 30px;
     left: 1063.35px;
     top: 596px;
     background-color: #5FC38E;
     border: 1px solid #67D89C;
-    transform: rotate(90deg); 
 }
 .smartSearch{
     width: 60%;

@@ -1,12 +1,25 @@
 //library imports
-import React from 'react'; 
+import React,{useContext} from 'react'; 
+
 
 //local imports
-import './style.css'
+import './style.css';
+import authService from '../../service/auth';
+import AuthContext from '../../contexts/auth';
 
-const Login = () =>{
+export default function Login(){
+
+    const {signed} = useContext(AuthContext);
+    
+    console.log(signed);
+
+    async function handleSignIn(){
+        const response = await authService();
+        console.log(response);
+    }
+
     return(
-        <div className="box">
+        <div className="loginBox">
             <form>
                 <div className="formContent">
                     <p>Login</p>
@@ -14,12 +27,11 @@ const Login = () =>{
                     <p>Senha</p>
                     <input />
                 </div>
-                <div className="formFooter">
-                    <button>Entrar</button>
-                </div>
             </form>
+                <div className="formFooter">
+                    <button onClick={()=>{handleSignIn()}}>Entrar</button>
+                </div>
         </div>
     );
 }
 
-export default Login;

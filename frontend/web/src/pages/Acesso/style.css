@@ -1,4 +1,4 @@
-.box{
+.accessBox{
     background-color: #F6F6F6;
     max-width: 1200px;
     margin: auto;
@@ -25,6 +25,7 @@
     width: 45%;
     background-color: #F6F6F6;
     border:0px;
+    text-decoration: none;
 }
 .leftButton:active{
     background-color: #e4e4e4;
@@ -43,6 +44,7 @@
     align-items: center;
     background-color: #F6F6F6;
     border:0px;
+    text-decoration: none;
 }
 .rightButton:active{
     background-color: #e4e4e4;

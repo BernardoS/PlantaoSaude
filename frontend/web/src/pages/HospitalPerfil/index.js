@@ -10,7 +10,7 @@ import Ocupation from '../../components/Charts/Ocupation';
 import OcupationHistory from '../../components/Charts/OcupationHistory';
 import Specialities from '../../components/Charts/Specialities';
 
-const HospitalProfile = () =>{
+const HospitalPerfil = () =>{
     const [ocupation,setOcupation] = useState(80);
     return(
         <div className="container">
@@ -19,7 +19,7 @@ const HospitalProfile = () =>{
                 <h2>Hospital Dom Orione</h2>
                 <button><img alt="Ícone de edição" className="editIcon" src={editIcon} /></button>
             </div>
-            <div className="box">
+            <div className="profileBox">
 
                 <section className="ocupationSection">
                     <h2 className="sectionTitle">Ocupação atual</h2>
@@ -50,4 +50,4 @@ const HospitalProfile = () =>{
     );
 }
 
-export default HospitalProfile;
+export default HospitalPerfil;

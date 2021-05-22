@@ -4,9 +4,9 @@ import React from 'react';
 //local imports
 import './style.css';
 
-const Cadastro = () =>{
+export default function Cadastro(){
     return(
-        <div className="box">
+        <div className="cadBox">
             <h1 className="pageTitle">Cadastro de unidade de saúde</h1>
             <form className="registerForm">
                 <section className="authSection">
@@ -47,5 +47,3 @@ const Cadastro = () =>{
         </div>
     );
 }
-
-export default Cadastro;

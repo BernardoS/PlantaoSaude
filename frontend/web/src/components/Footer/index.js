@@ -3,7 +3,7 @@ import React from 'react';
 import './style.css'
 import randomLogo from '../../images/random-logo-plantao-saude-white.png';
 
-const Footer = () =>{
+export default function Footer(){
     return(
         <div className="footer">
             <img alt="Logo do Time Random Software" src={randomLogo}/>
@@ -14,4 +14,3 @@ const Footer = () =>{
     );
 }
 
-export default Footer;
