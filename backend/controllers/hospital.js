@@ -11,9 +11,9 @@ export const getHospital = async (req, res) => {
 }
 
 export const createHospital = async (req, res) => {
-    const hosp = req.body;
+    const hospital = req.body;
 
-    const novoHospital = new Hospital(hosp);
+    const novoHospital = new Hospital(hospital);
 
     try {
         await novoHospital.save();
