@@ -9,6 +9,9 @@ router.post('/', createHospital );
 router.delete('/:id', deleteHospital );
 router.patch('/:id', updatedHospital);
 
+//busca de hospitais
 router.get('/:nome_hospital', getHospitalName);
+
+
 
 export default router;

@@ -14,7 +14,7 @@ import Dados from '../pages/Dados';
 
 //Restrict Routes
 import HospitalPerfil from '../pages/HospitalPerfil';
-
+import ControleOcupacao from '../pages/HospitalPerfil/ControleOcupacao';
 
 
 export default function Routes(){
@@ -47,6 +47,7 @@ function RestrictRoutes(){
     return(
         <Switch>
             <Route exact path="/hospital" component={HospitalPerfil}/>
+            <Route exact path="/hospital/controle" component={ControleOcupacao}/>
             <Route exact path='/dados' component={Dados}/>
             <Route exact path='/busca' component={Busca}/>
             <Route exact path='/' component={Home}/>

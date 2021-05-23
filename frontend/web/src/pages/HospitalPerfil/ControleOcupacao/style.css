@@ -1,0 +1,47 @@
+.controleBox{
+    background-color: #F6F6F6;
+    max-width: 1200px;
+    margin: auto;
+    margin-top:100px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35vh;
+    padding-bottom: 40px;
+    align-items: center;
+}
+
+.controleBox form input{
+    width: 500px;
+    height: 75px;
+    background: #EFEFEF;
+    border-radius: 6px;
+    border:0px;
+    font-size: 25px;
+    color:#2FB16D;
+}
+
+.controleBox form h2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    color:#2FB16D;
+}
+.controleBox form button{
+        width: 230px;
+        height: 70px;
+        background: #44AD75;
+        border-radius: 6px;
+        border:0px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 23px;
+        margin-top: 30px;
+        color: #F9FEFC;
+}

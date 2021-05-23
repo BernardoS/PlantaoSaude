@@ -13,6 +13,18 @@ function SearchBar({config}){
     function handleSubmit(){
         if((search===null) && (speciality===null) && (ocupation===null)){
             return alert('PREENCHA UM DOS CAMPOS DE PESQUISA');
+        }else if((search===null&&(speciality===null)&&(ocupation!==null))){
+            //pesquisa por especialidade e por nome
+        }else if((search===null&&(speciality!==null)&&(ocupation===null))){
+            //pesquisa por nome e ocupação
+        }else if((search!==null&&(speciality===null)&&(ocupation===null))){
+            //pesquisa por especialidade e ocupação
+        }else if((search!==null&&(speciality!==null)&&(ocupation===null))){
+            //pesquisa por ocupação
+        }else if((search===null&&(speciality!==null)&&(ocupation!==null))){
+            //pesquisa por nome
+        }else if((search!==null&&(speciality==null)&&(ocupation!==null))){
+            //pesquisa por especialidade
         }else{
             config.history.push({
                 pathname:'/busca',

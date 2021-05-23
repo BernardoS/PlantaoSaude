@@ -45,6 +45,7 @@ export const AuthProvider=({children})=>{
                 doLogout,
                 loading,
                 setLoading,
+                hospitalData
                 }}>
 
             {children}
