@@ -1,0 +1,21 @@
+.dataBox{
+    background-color: #F6F6F6;
+    max-width: 1200px;
+    margin: auto;
+    margin-top:100px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: 'Roboto';
+}
+.dataBox h1{
+    color:#20794A;
+}
+.dataBox h2{
+    color: #50B881;
+}

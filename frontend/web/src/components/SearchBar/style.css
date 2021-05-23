@@ -1,0 +1,65 @@
+.form{
+    margin: auto;
+    width: 1200px;
+    height: 120px;
+    background: #F6F6F6;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.form button{
+    height: 100%;
+    width:100px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 0px;
+}
+
+
+.searchBar{
+    color:#5FC38E;
+    font-family: 'Roboto';
+    font-weight: 700;
+    height: 95%;
+    border: 0px;
+    font-size: 25px;
+    width: 50%;
+    background: #F6F6F6;
+    padding-left: 30px;
+}
+.searchIcon{
+    height: 25px;
+}
+.specialityField{
+    color:#5FC38E;
+    font-family: 'Roboto';
+    font-weight: 700;
+    height: 95%;
+    border: 0px;
+    font-size: 25px;
+    background: #F6F6F6;
+}
+.specialityField option{
+    padding:20px;
+}
+.ocupationField{
+    color:#5FC38E;
+    font-family: 'Roboto';
+    font-weight: 700;
+    height: 95%;
+    border: 0px;
+    font-size: 25px;
+    background: #F6F6F6;
+}
+.ocupationField option{
+    padding:20px;
+}
+.lineSearch{
+    width: 0px;
+    height: 30px;
+    left: 1063.35px;
+    top: 596px;
+    background-color: #5FC38E;
+    border: 1px solid #67D89C;
+}

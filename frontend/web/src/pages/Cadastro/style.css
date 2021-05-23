@@ -84,19 +84,6 @@
     font-size: 25px;
     color:#2FB16D;
 }
-.indentificationSection button{
-    width: 230px;
-    height: 70px;
-    background: #44AD75;
-    border-radius: 6px;
-    border:0px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 23px;
-
-    color: #F9FEFC;
-}
 .locationContactSection{
     display: flex;
     flex-direction: row;

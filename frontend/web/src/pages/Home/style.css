@@ -23,63 +23,7 @@
     margin-left: 30%;
     margin-top: 0%;
 }
-.form{
-    margin: auto;
-    margin-top: -50px;
-    width: 1200px;
-    height: 120px;
-    background: #F6F6F6;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-.searchBar{
-    color:#5FC38E;
-    font-family: 'Roboto';
-    font-weight: 700;
-    height: 95%;
-    border: 0px;
-    font-size: 25px;
-    width: 50%;
-    background: #F6F6F6;
-}
-.searchIcon{
-    height: 25px;
-}
-.specialityField{
-    color:#5FC38E;
-    font-family: 'Roboto';
-    font-weight: 700;
-    height: 95%;
-    border: 0px;
-    font-size: 25px;
-    background: #F6F6F6;
-}
-.specialityField option{
-    padding:20px;
-}
-.ocupationField{
-    color:#5FC38E;
-    font-family: 'Roboto';
-    font-weight: 700;
-    height: 95%;
-    border: 0px;
-    font-size: 25px;
-    background: #F6F6F6;
-}
-.ocupationField option{
-    padding:20px;
-}
-.lineSearch{
-    width: 0px;
-    height: 30px;
-    left: 1063.35px;
-    top: 596px;
-    background-color: #5FC38E;
-    border: 1px solid #67D89C;
-}
+
 .smartSearch{
     width: 60%;
     margin:auto;
@@ -151,4 +95,7 @@
 .optionImage{
     height: 300px;
     margin-right: 50px;
+}
+.searchBarDiv{
+    margin-top: -35px;
 }

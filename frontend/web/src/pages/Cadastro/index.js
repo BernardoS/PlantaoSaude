@@ -1,5 +1,6 @@
 //library imports
 import React from 'react';
+import FileInputComponent from 'react-file-input-previews-base64';
 
 //local imports
 import './style.css';
@@ -21,7 +22,15 @@ export default function Cadastro(){
                         <p>Nome</p>
                         <input/>
                         <p>Foto</p>
-                        <button>Escolher Imagem</button>
+                        <FileInputComponent
+                            labelText=""
+                            labelStyle={{
+                                fontSize:25
+                            }}
+                            multiple={true}
+                            callbackFunction={(file_arr)=>{console.log(file_arr)}}
+                            accept="image/*" 
+                            />
                 </section>
                 
                 <section className="locationContactSection">

@@ -36,6 +36,8 @@ export const AuthProvider=({children})=>{
     }
 
 
+
+
     return(
         <AuthContext.Provider 
             value={{
@@ -44,7 +46,7 @@ export const AuthProvider=({children})=>{
                 doLogin,
                 doLogout,
                 loading,
-                setLoading
+                setLoading,
                 }}>
 
             {children}
