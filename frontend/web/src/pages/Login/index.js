@@ -4,18 +4,17 @@ import React,{useContext} from 'react';
 
 //local imports
 import './style.css';
-import authService from '../../service/auth';
 import AuthContext from '../../contexts/auth';
 
 export default function Login(){
 
-    const {signed} = useContext(AuthContext);
+    const {signed,doLogin} = useContext(AuthContext);
     
     console.log(signed);
 
     async function handleSignIn(){
-        const response = await authService();
-        console.log(response);
+        doLogin()
+        console.log('logar');
     }
 
     return(

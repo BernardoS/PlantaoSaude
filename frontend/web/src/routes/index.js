@@ -1,8 +1,9 @@
 //library imports
-import React from 'react';
+import React,{useContext} from 'react';
 import {Switch,Route, Redirect} from "react-router-dom";
-//local imports
 
+//local imports
+import AuthContext from '../contexts/auth';
 //Open Routes
 import Home from '../pages/Home';
 import Login from '../pages/Login';
@@ -17,10 +18,12 @@ import HospitalPerfil from '../pages/HospitalPerfil';
 
 
 export default function Routes(){
+
+    const {signed} = useContext(AuthContext);
+
     return (
         <>
-            <OpenRoutes/>
-            <RestrictRoutes/>
+            {signed?<RestrictRoutes/>:<OpenRoutes/>}
         </>
     );
 }
@@ -35,6 +38,7 @@ function OpenRoutes(){
             <Route exact path='/acesso/cadastro' component={Cadastro}/>
             <Route exact path='/dados' component={Dados}/>
             <Route exact path='/busca' component={Busca}/>
+            <Redirect to="/"/>
         </Switch>
     );
 }
@@ -43,6 +47,10 @@ function RestrictRoutes(){
     return(
         <Switch>
             <Route exact path="/hospital" component={HospitalPerfil}/>
+            <Route exact path='/dados' component={Dados}/>
+            <Route exact path='/busca' component={Busca}/>
+            <Route exact path='/' component={Home}/>
+            <Redirect to="/hospital"/>
         </Switch>
     );
 }

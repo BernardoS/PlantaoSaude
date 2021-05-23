@@ -1,6 +1,7 @@
 //library imports
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import {Link} from 'react-router-dom';
+import AuthContext from '../../contexts/auth';
 
 //local imports
 import logoSymbol from '../../images/Logo.png';
@@ -10,6 +11,16 @@ import './style.css';
 
 
 export default function  NavBar(){
+
+    const {signed,doLogout} = useContext(AuthContext);
+
+    useEffect(()=>{
+
+    },[signed]);
+
+    function handleLogout(){
+        doLogout();
+    }
     
     return(
         <div className="bar">
@@ -23,6 +34,7 @@ export default function  NavBar(){
                 <NavBarLink page="">Home</NavBarLink>
                 <NavBarLink page="dados">Estatísticas da cidade</NavBarLink>
                 <NavBarLink page="acesso">Acesso Hospital</NavBarLink>
+                {signed&& <button onClick={()=>handleLogout()}>Sair</button>}
             </div>
         </div>
     )

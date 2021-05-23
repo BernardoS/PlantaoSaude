@@ -33,4 +33,13 @@
     font-style: normal;
     font-weight: normal;
 }
-
+.menu button{
+    background-color: rgba(0,0,0,0);
+    margin-left: 60px;
+    font-size:20px;
+    color:#20794A;
+    background-color: #FFFFFF;
+    border:0px;
+    text-decoration: none;
+    font-weight: bold;
+}
