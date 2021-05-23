@@ -61,7 +61,7 @@ function SearchBar({config}){
                         value={ocupation}
                         onChange={(e)=>setOcupation(e.target.value)}>
 
-                        <option selected value="100%">Menor que 100%</option>
+                        <option  value="100%">Menor que 100%</option>
                         <option  value="90%">Menor que 90%</option>
                         <option  value="80%">Menor que 80%</option>
                         <option  value="70%">Menor que 70%</option>

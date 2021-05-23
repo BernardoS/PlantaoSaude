@@ -4,9 +4,9 @@ import { getHospitals, createHospital, deleteHospital, updatedHospital, getHospi
 
 const router = express.Router();
 
-router.get('/', getHospitals )
-router.post('/', createHospital )
-router.delete('/:id', deleteHospital )
+router.get('/', getHospitals );
+router.post('/', createHospital );
+router.delete('/:id', deleteHospital );
 router.patch('/:id', updatedHospital);
 
 router.get('/:nome_hospital', getHospitalName);

@@ -1,5 +1,5 @@
 //library imports
-import React,{useContext} from 'react'; 
+import React,{useContext, useState} from 'react'; 
 
 
 //local imports
@@ -8,27 +8,38 @@ import AuthContext from '../../contexts/auth';
 
 export default function Login(){
 
+    const [login,setLogin] = useState(null);
+    const [senha,setSenha] = useState(null);
+
     const {signed,doLogin} = useContext(AuthContext);
     
-    console.log(signed);
+    //console.log(signed);
 
     async function handleSignIn(){
-        doLogin()
+        doLogin(login,senha)
         console.log('logar');
     }
 
     return(
         <div className="loginBox">
-            <form>
+            <form >
                 <div className="formContent">
                     <p>Login</p>
-                    <input />
+                    <input 
+                        value={login}
+                        onChange={(e)=>setLogin(e.target.value)}
+                    />
                     <p>Senha</p>
-                    <input />
+                    <input 
+                        type="password"
+                        value={senha}
+                        onChange={(e)=>setSenha(e.target.value)}
+                    />
                 </div>
+                
             </form>
-                <div className="formFooter">
-                    <button onClick={()=>{handleSignIn()}}>Entrar</button>
+            <div className="formFooter">
+                    <button onClick={()=>handleSignIn()}>Entrar</button>
                 </div>
         </div>
     );
